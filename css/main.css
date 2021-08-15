@@ -50,10 +50,20 @@ body {
 }
 
 .card__head figure {
-  height: inherit;
+  height: 300px;
 }
 
-.card__head img {
+/* .card__head img {
+  display: block;
+  filter: opacity(.5);
+  height: inherit;
+  width: 100%;
+} */
+
+.card__head span {
+  background-image: url('../images/image-header-mobile.jpg');
+  background-position: center;
+  background-size: cover;
   display: block;
   filter: opacity(.5);
   height: inherit;
@@ -119,7 +129,8 @@ body {
 }
 
 .footer a {
-  color: var(--soft-violet);
+  /* color: var(--soft-violet); */
+  color: #00b4d8;
   text-decoration: none;
 }
 
@@ -150,6 +161,10 @@ body {
 
   .card__head figure{
     height: 100%;
+  }
+
+  .card__head span{
+    background-image: url('../images/image-header-desktop.jpg');
   }
 
   .card__body {
