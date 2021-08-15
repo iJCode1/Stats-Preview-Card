@@ -128,3 +128,66 @@ body {
     margin-block: 30px 70px;
   }
 }
+
+/* ---------- Laptop ---------- */
+@media screen and (min-width: 1024px) {
+  .card {
+    display: flex;
+    max-width: 1024px;
+    max-height: 420px;
+    margin: 0;
+    /* height: calc(80vh - 40px); */
+    width: 80vw;
+  }
+
+  .card__head {
+    /* max-height: 400px;
+    height: 400px; */
+    max-height: inherit;
+    order: 2;
+    width: 50%;
+  }
+
+  .card__head figure{
+    height: 100%;
+  }
+
+  .card__body {
+    gap: 20px;
+    padding-block: 60px;
+    padding-inline-start: 50px;
+    padding-inline-end: 70px;
+    text-align: left;
+    width: 50%;
+  }
+
+  .card__title {
+    font-size: 3rem;
+  }
+
+  .card__description{
+    font-size: 1.4rem;
+    margin-block-end: 30px;
+  }
+
+  .card__stats{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1302px) and (max-height: 550px) {
+  body{
+    /* background-color: blue; */
+  }
+  /* .card__title {
+    font-size: 3rem;
+  }
+
+  w: 1302
+  h: 550
+
+  .card__description{
+    font-size: 1.4rem;
+  } */
+}
